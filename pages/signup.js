@@ -1,8 +1,12 @@
+import styles from './Signup.module.css';
+
 export default function Signup() {
   return (
-    <div style={{ textAlign: "center", padding: "4rem", fontFamily: "sans-serif" }}>
-      <h1>Create Your Free Account</h1>
-      <p>Welcome! Your signup form will go here soon.</p>
-    </div>
+    <form className={styles.form}>
+      <input className={styles.input} type="text" placeholder="Name" />
+      <input className={styles.input} type="email" placeholder="Email" />
+      <input className={styles.input} type="password" placeholder="Password" />
+      <button className={styles.signupBtn}>Sign Up</button>
+    </form>
   );
 }
